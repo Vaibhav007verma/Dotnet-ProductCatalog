@@ -9,16 +9,16 @@ namespace ProductCatalog.Service
         private readonly IMemoryCache _cache;
         private readonly List<ProductModel> _products = new()
         {
-            new ProductModel { Id = 1, Name = "iPhone 15", Category = "Electronics", Price = 65000, Stock = 10, IsActive = true },
-            new ProductModel { Id = 2, Name = "Samsung S24", Category = "Electronics", Price = 75000, Stock = 15, IsActive = true },
-            new ProductModel { Id = 3, Name = "Dell Laptop", Category = "Computers", Price = 55000, Stock = 8, IsActive = true },
-            new ProductModel { Id = 4, Name = "HP Laptop", Category = "Computers", Price = 45000, Stock = 12, IsActive = true },
-            new ProductModel { Id = 5, Name = "Nike Shoes", Category = "Fashion", Price = 3000, Stock = 20, IsActive = true },
-            new ProductModel { Id = 6, Name = "Adidas Shoes", Category = "Fashion", Price = 4000, Stock = 18, IsActive = true },
-            new ProductModel { Id = 7, Name = "Sony Headphones", Category = "Electronics", Price = 5000, Stock = 25, IsActive = true },
-            new ProductModel { Id = 8, Name = "MacBook Air", Category = "Computers", Price = 90000, Stock = 5, IsActive = true },
-            new ProductModel { Id = 9, Name = "Watch", Category = "Fashion", Price = 2500, Stock = 30, IsActive = true },
-            new ProductModel { Id = 10, Name = "Keyboard", Category = "Electronics", Price = 1500, Stock = 40, IsActive = true }
+            new ProductModel { Id = 1,  Name = "iPhone 15",       Category = "Electronics", Price = 65000, Stock = 10, IsActive = true },
+            new ProductModel { Id = 2,  Name = "Samsung S24",     Category = "Electronics", Price = 75000, Stock = 15, IsActive = true },
+            new ProductModel { Id = 3,  Name = "Dell Laptop",     Category = "Computers",   Price = 55000, Stock = 8,  IsActive = true },
+            new ProductModel { Id = 4,  Name = "HP Laptop",       Category = "Computers",   Price = 45000, Stock = 12, IsActive = true },
+            new ProductModel { Id = 5,  Name = "Nike Shoes",      Category = "Fashion",     Price = 3000,  Stock = 20, IsActive = true },
+            new ProductModel { Id = 6,  Name = "Adidas Shoes",    Category = "Fashion",     Price = 4000,  Stock = 18, IsActive = true },
+            new ProductModel { Id = 7,  Name = "Sony Headphones", Category = "Electronics", Price = 5000,  Stock = 25, IsActive = true },
+            new ProductModel { Id = 8,  Name = "MacBook Air",     Category = "Computers",   Price = 90000, Stock = 5,  IsActive = true },
+            new ProductModel { Id = 9,  Name = "Watch",           Category = "Fashion",     Price = 2500,  Stock = 30, IsActive = true },
+            new ProductModel { Id = 10, Name = "Keyboard",        Category = "Electronics", Price = 1500,  Stock = 40, IsActive = true }
         };
         
         public ProductService(IMemoryCache cache)
@@ -51,7 +51,7 @@ namespace ProductCatalog.Service
                 products = products.Where(p => p.Price > query.MinPrice );
             }
 
-            if(!string.IsNullOrWhiteSpace(query.Search))
+            if(!string.IsNullOrWhiteSpace(query.MaxPrice.ToString()))
             {
                 products = products.Where(p => p.Price < query.MaxPrice);
             }

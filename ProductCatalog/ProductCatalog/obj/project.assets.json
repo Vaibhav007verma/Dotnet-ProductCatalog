@@ -89,11 +89,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dev\\source\\repos\\ProductCatalog\\ProductCatalog\\ProductCatalog.csproj",
+      "projectUniqueName": "C:\\Users\\Dev\\source\\repos\\Proj5\\ProductCatalog\\ProductCatalog\\ProductCatalog.csproj",
       "projectName": "ProductCatalog",
-      "projectPath": "C:\\Users\\Dev\\source\\repos\\ProductCatalog\\ProductCatalog\\ProductCatalog.csproj",
+      "projectPath": "C:\\Users\\Dev\\source\\repos\\Proj5\\ProductCatalog\\ProductCatalog\\ProductCatalog.csproj",
       "packagesPath": "C:\\Users\\Dev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dev\\source\\repos\\ProductCatalog\\ProductCatalog\\obj\\",
+      "outputPath": "C:\\Users\\Dev\\source\\repos\\Proj5\\ProductCatalog\\ProductCatalog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
